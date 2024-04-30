@@ -26,8 +26,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.45);
     z-index: 9999;
+}
+
+.Splash-Screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.69);
 }
 
 .splash-content {
@@ -40,7 +52,7 @@ body {
 }
 
 #splash-screen {
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
 #main-page {
@@ -66,16 +78,23 @@ body {
 
 .profile-content {
     text-align: center;
+    position: static;
 }
 
 .profile-content h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    position: static;
 }
 
 .social-links {
     list-style: none;
     padding: 0;
+    position: static;
+    box-sizing: border-box;
+    margin: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
 }
 
 .social-links li {
